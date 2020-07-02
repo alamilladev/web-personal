@@ -43,6 +43,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 70px;
 }
 
 h1 {
@@ -62,9 +63,10 @@ h1 strong {
   object-fit: cover;
 }
 
-/* ------------------------ */
-/* More about my experience */
-/* ------------------------ */
+
+/* ------------- */
+/* My experience */
+/* ------------- */
 .experience {
   padding: 20px;
   background-color: #F8F9FA;
@@ -103,7 +105,7 @@ h1 strong {
 }
 
 .work-description {
-  text-align: left;
+  text-align: justify;
 }
 
 .work-url {
@@ -112,4 +114,17 @@ h1 strong {
   padding: 5px 20px;
   text-decoration: none;
   border-radius: 5px;
+}
+
+/* ------------- */
+/* More about me */
+/* ------------- */
+
+.about-me {
+  padding: 20px;
+  background-color: white;
+}
+
+.about-me-wrapper {
+  margin-bottom: 20px;
 }
