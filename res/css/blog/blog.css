@@ -1,0 +1,44 @@
+/* -------------- */
+/* General Styles */
+/* -------------- */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  color: #1D78F9;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+hr {
+  display: block;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+}
+
+
+/* ---------- */
+/* Blog posts */
+/* ---------- */
+.blog-posts {
+  padding: 20px;
+  padding-top: 90px;
+}
