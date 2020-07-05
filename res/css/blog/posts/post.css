@@ -35,10 +35,100 @@ hr {
 }
 
 
-/* ---- */
-/* Post */
-/* ---- */
+/* ---------- */
+/* Post cover */
+/* ---------- */
 .post {
+  padding-top: 70px;
+}
+
+.post-cover {
+  height: 330px;
+  background-color: #1c3643;
+  background-image: url('https://ethos.org.mx/wp-content/uploads/2016/06/ethos-reflexiones-sobre-la-pobreza.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.post-cover::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.75) 80%);
+}
+
+.post-info-container {
+  position: relative;
+  z-index: 2;
+  
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.post-title {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  font-size: 25px;
+}
+
+.post-meta {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.post-meta i {
+  margin-right: 3px;
+}
+
+.post-author,
+.post-date,
+.post-coments {
+  margin-right: 20px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-img-wrapper img {
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.author-name {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
+/* ------------ */
+/* Post content */
+/* ------------ */
+.post-text, .post-info {
+  margin: 0 55px;
+}
+
+.post-content {
   padding: 20px;
-  padding-top: 90px;
+}
+
+.post-content p {
+  font-size: 20px;
+  line-height: 1.6em;
 }

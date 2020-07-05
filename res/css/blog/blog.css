@@ -71,6 +71,10 @@ hr {
   color: #696969;
 }
 
+.post-meta i {
+  margin-right: 3px;
+}
+
 .post-author,
 .post-date,
 .post-coments {
