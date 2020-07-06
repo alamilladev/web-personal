@@ -131,4 +131,13 @@ hr {
 .post-content p {
   font-size: 20px;
   line-height: 1.6em;
+  /* text-align: justify; */
+}
+
+blockquote {
+  font-style: italic;
+  padding: 0 1em;
+  color: #4e5257;
+  border-left: .25em solid #dfe2e5;
+  margin: 0;
 }
