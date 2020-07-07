@@ -363,12 +363,3 @@ h1 strong {
   font-weight: bold;
   font-style: italic;
 }
-
-.thanks p, .thanks ul {
-  text-align: center;
-}
-
-.thanks ul {
-  list-style: none;
-  padding: 0;
-}
