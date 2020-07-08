@@ -327,19 +327,19 @@ h1 strong {
 }
 
 .social-link.twitter {
-  background-image: url('../../img/home/twitter.svg');
+  background-image: url('../img/twitter.svg');
 }
 
 .social-link.facebook {
-  background-image: url('../../img/home/facebook.svg');
+  background-image: url('../img/facebook.svg');
 }
 
 .social-link.github {
-  background-image: url('../../img/home/github.svg');
+  background-image: url('../img/github.svg');
 }
 
 .social-link.instagram {
-  background-image: url('../../img/home/instagram.svg');
+  background-image: url('../img/instagram.svg');
 }
 
 
@@ -362,4 +362,47 @@ h1 strong {
   color: white;
   font-weight: bold;
   font-style: italic;
+}
+
+
+
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* |                                           | */
+/* |             RESPONSIVE DESIGN             | */
+/* |                                           | */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+
+/* ------------------------------------ */
+/* Breakpoint: tablets (768px - 1024px) */
+/* ------------------------------------ */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    border: 10px solid red;
+  }
+}
+
+
+/* ---------------------------------- */
+/* Breakpoint: mobile (480px - 320px) */
+/* ---------------------------------- */
+
+@media screen and (max-width: 480px) {
+  body {
+    border: 10px solid green;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    border: 10px solid red;
+  }
 }
