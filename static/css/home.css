@@ -25,13 +25,14 @@ hr {
 }
 
 .container {
-  width: 1000px;
+  max-width: 1000px;
+  flex: 1;
   margin: 0 auto;
-
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
+  flex-wrap: inherit;
 }
 
 
@@ -45,6 +46,8 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 0 15px;
 
   -webkit-box-shadow: 0px 10px 10px -6px #000000; 
   box-shadow: 0px 10px 10px -6px #080808;
@@ -109,6 +112,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -145,7 +149,7 @@ h1 strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  flex-wrap: wrap;
 
   -webkit-box-shadow: 0px 2px 20px -8px #000000;
   box-shadow: 0px 2px 20px -8px #000000;
@@ -254,6 +258,7 @@ h1 strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact .container {
@@ -384,9 +389,30 @@ h1 strong {
 
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    border: 10px solid red;
+@media screen and (max-width: 767px) {
+  /* ------ */
+  /* Header */
+  /* ------ */
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .header ol {
+    display: block;
+  }
+
+  .header ol li {
+    height: 50px;
+  }
+
+  .header a {
+    justify-content: center;
+  }
+
+  .header .logo-wrapper {
+    padding-top: 10px;
+    justify-content: center;
   }
 }
 
@@ -396,13 +422,9 @@ h1 strong {
 /* ---------------------------------- */
 
 @media screen and (max-width: 480px) {
-  body {
-    border: 10px solid green;
-  }
+  
 }
 
 @media screen and (max-width: 320px) {
-  body {
-    border: 10px solid red;
-  }
+  
 }
