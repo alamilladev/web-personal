@@ -1,3 +1,12 @@
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* |                                           | */
+/* |               DESKTOP FIRST               | */
+/* |                                           | */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+
 /* -------------- */
 /* General Styles */
 /* -------------- */
@@ -156,7 +165,7 @@ h1 strong {
 }
 
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 
 .project-title {
@@ -172,21 +181,22 @@ h1 strong {
 }
 
 .project-url a {
-  /* text-decoration: none; */
   color: #1D78F9;
 }
 
 .project-description {
-  text-align: justify;
+  margin-top: 0;
+  /* text-align: justify; */
   font-size: 18px;
 }
 
 .project-imageContainer {
-  width: 500px;
+  width: 50%;
 }
 
 .project-image {
-  margin-left: 30px;
+  max-width: 100%;
+  margin-left: 20px;
   border-radius: 5px;
 }
 
@@ -372,27 +382,29 @@ h1 strong {
 
 
 
-/* --------------------------------------------- */
-/* --------------------------------------------- */
-/* |                                           | */
-/* |             RESPONSIVE DESIGN             | */
-/* |                                           | */
-/* --------------------------------------------- */
-/* --------------------------------------------- */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* |                                             | */
+/* |              RESPONSIVE DESIGN              | */
+/* |                                             | */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
 
 
 /* ------------------------------------ */
 /* Breakpoint: tablets (768px - 1024px) */
 /* ------------------------------------ */
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 1023px) {
+  .project-image {
+    margin-left: 15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  /* ------ */
-  /* Header */
-  /* ------ */
+  /* ----------------- */
+  /* Header responsive */
+  /* ----------------- */
   .header {
     display: block;
     height: auto;
@@ -413,6 +425,52 @@ h1 strong {
   .header .logo-wrapper {
     padding-top: 10px;
     justify-content: center;
+  }
+
+  /* -------------------- */
+  /* Portfolio responsive */
+  /* -------------------- */
+  .project {
+    display: block;
+    padding: 30px;
+  }
+
+  .project-technology, .project-date, .project-url {
+    margin: .5em 0;
+  }
+
+  .project-details {
+    width: auto;
+    font-size: 16px;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+  }
+
+  .project-technology {
+    font-size: .7em;
+  }
+
+  .project-date {
+    font-size: 1em;
+  }
+
+  .project-url {
+    font-size: 1em;
+  }
+
+  .project-description {
+    font-size: 1em;
+  }
+
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+
+  .project-image {
+    margin: 0;
   }
 }
 
