@@ -205,9 +205,9 @@ h1 strong {
 }
 
 
-/* ------------------------ */
-/* More about my experience */
-/* ------------------------ */
+/* ------------- */
+/* My experience */
+/* ------------- */
 .experience {
   padding: 20px;
 }
@@ -218,8 +218,8 @@ h1 strong {
 }
 
 .work {
-  margin: 0 10px 20px;
-  width: 480px;
+  margin: 0 1% 7%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -427,6 +427,7 @@ h1 strong {
     justify-content: center;
   }
 
+
   /* -------------------- */
   /* Portfolio responsive */
   /* -------------------- */
@@ -441,7 +442,7 @@ h1 strong {
 
   .project-details {
     width: auto;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .project-title {
@@ -452,15 +453,7 @@ h1 strong {
     font-size: .7em;
   }
 
-  .project-date {
-    font-size: 1em;
-  }
-
-  .project-url {
-    font-size: 1em;
-  }
-
-  .project-description {
+  .project-date, .project-url, .project-description {
     font-size: 1em;
   }
 
@@ -470,7 +463,21 @@ h1 strong {
   }
 
   .project-image {
+    width: auto;
     margin: 0;
+  }
+
+
+  /* ------------------------ */
+  /* My experience responsive */
+  /* ------------------------ */
+  .work {
+    width: auto;
+    flex-shrink: initial;
+  }
+  .work img {
+    width: 100%;
+    height: 350px;
   }
 }
 
@@ -480,7 +487,25 @@ h1 strong {
 /* ---------------------------------- */
 
 @media screen and (max-width: 480px) {
-  
+  /* -------------------- */
+  /* Portfolio responsive */
+  /* -------------------- */
+  .project {
+    padding: 20px;
+  }
+
+
+  /* ------------------------ */
+  /* My experience responsive */
+  /* ------------------------ */
+  .work img {
+    height: initial;
+  }
+  .work-detail {
+    /* 1em = 16px */
+    margin: -2em .5em .5em;
+    padding: 1em;
+  }
 }
 
 @media screen and (max-width: 320px) {
