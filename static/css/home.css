@@ -186,7 +186,6 @@ h1 strong {
 
 .project-description {
   margin-top: 0;
-  /* text-align: justify; */
   font-size: 18px;
 }
 
@@ -411,6 +410,52 @@ h1 strong {
   }
 }
 
+
+@media screen and (max-width: 950px) {
+  /* --------------- */
+  /* Hero responsive */
+  /* --------------- */
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 8em 2em;
+  }
+  
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    filter: opacity(80%) blur(0px);
+  }
+
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+    text-shadow: 0.1rem 0.1rem 0.3rem black
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  /* ------------------ */
+  /* Contact responsive */
+  /* ------------------ */
+  .social-link {
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
   /* ----------------- */
   /* Header responsive */
@@ -500,6 +545,12 @@ h1 strong {
     text-align: center;
   }
 
+  .social-link {
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+  }
+
   .social-wrapper, .form-contact {
     width: 100%;
     text-align: center;
@@ -516,6 +567,20 @@ h1 strong {
 /* ---------------------------------- */
 
 @media screen and (max-width: 480px) {
+  /* --------------- */
+  /* Hero responsive */
+  /* --------------- */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 5em 2em;
+  }
+
   /* -------------------- */
   /* Portfolio responsive */
   /* -------------------- */
@@ -548,6 +613,14 @@ h1 strong {
 }
 
 @media screen and (max-width: 369px) {
+  /* --------------- */
+  /* Hero responsive */
+  /* --------------- */
+  h1 {
+    font-size: 1.3em;
+  }
+
+
   /* ------------------ */
   /* Contact responsive */
   /* ------------------ */
@@ -556,9 +629,15 @@ h1 strong {
     height: 50px;
     background-size: 50px 50px;
   }
+
+  .coded-by {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  
+  
   /* ------------------ */
   /* Contact responsive */
   /* ------------------ */
