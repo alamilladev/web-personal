@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="static/css/home.css" />
   </head>
   <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-button"></i>
 
     <!-- Header -->
     <header class="header">
@@ -28,13 +28,13 @@
         <nav class="menu">
           <ol>
             <li>
-              <a class="link" href="#proyectos">Proyectos</a>
+              <a class="link link-proyectos" href="#proyectos">Proyectos</a>
             </li>
             <li>
-              <a class="link" href="#experiencia">Experiencia</a>
+              <a class="link link-experiencia" href="#experiencia">Experiencia</a>
             </li>
             <li>
-              <a class="link" href="#contacto">Contáctame</a>
+              <a class="link link-contacto" href="#contacto">Contáctame</a>
             </li>
           </ol>
         </nav>
@@ -173,5 +173,32 @@
         </p>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+      /* Get HTML elements by querySelector */
+      const menu = document.querySelector('.menu')
+      const heroTitle = document.querySelector('h1')
+      const burgerButton = document.querySelector('#burger-button')
+
+      /* Lisening events to call hideShow menu function*/
+      burgerButton.addEventListener('click', hideShow)
+      document.querySelector('.link-proyectos').addEventListener('click', hideShow)
+      document.querySelector('.link-experiencia').addEventListener('click', hideShow)
+      document.querySelector('.link-contacto').addEventListener('click', hideShow)
+
+      /* Function to hide and show menu */
+      function hideShow() {
+        if(menu.classList.contains('is-active')) {
+          /* Removing classes in order to hide menu and show heroTitle */
+          menu.classList.remove('is-active')
+          heroTitle.classList.remove('menu-is-active')
+        } else {
+          /* Adding classes in order to show menu and hide heroTitle */
+          menu.classList.add('is-active')
+          heroTitle.classList.add('menu-is-active')    
+        }
+      }
+    </script>
   </body>
 </html>
