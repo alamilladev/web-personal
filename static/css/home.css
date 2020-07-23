@@ -58,19 +58,19 @@
 /* General Styles */
 /* -------------- */
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', system-ui;
   margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Fjalla One', system-ui;
   font-weight: normal;
 }
 
 h2 {
   color: #1D78F9;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', system-ui;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
@@ -165,7 +165,7 @@ hr {
   font-weight: bold;
   margin-left: 15px;
   letter-spacing: 2px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', system-ui;
 }
 
 .logo img {
@@ -195,6 +195,7 @@ h1 {
   letter-spacing: .2px;
   color: white;
   margin: 0;
+  max-width: 500px;
 }
 
 h1 strong {
@@ -341,7 +342,7 @@ h1 strong {
 
 .contact h3 {
   color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', system-ui;
   font-weight: bold;
   font-size: 24px;
 }
@@ -369,7 +370,7 @@ h1 strong {
   border-radius: 3px;
   padding: 10px 15px;
   margin-bottom: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', system-ui;
   font-size: 15px;
   /* background-image: url('../../img/home/envelope.svg');
   background-size: 20px 20px;
