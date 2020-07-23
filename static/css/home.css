@@ -572,7 +572,7 @@ h1 strong {
   }
 
   .menu {
-    background: rgba(29, 37, 44, .9);
+    background: rgba(29, 37, 44, .93);
     position: fixed;
     z-index: 3;
     top: 0;
@@ -677,6 +677,13 @@ h1 strong {
 /* ---------------------------------- */
 
 @media screen and (max-width: 480px) {
+  /* ------- */
+  /* General */
+  /* ------- */
+  h2 {
+    margin-bottom: 20px;
+  }
+
   /* --------------- */
   /* Hero responsive */
   /* --------------- */
@@ -694,6 +701,9 @@ h1 strong {
   /* -------------------- */
   /* Portfolio responsive */
   /* -------------------- */
+  .portfolio {
+    padding: 15px;
+  }
   .project {
     padding: 20px;
   }
@@ -702,6 +712,10 @@ h1 strong {
   /* ------------------------ */
   /* My experience responsive */
   /* ------------------------ */
+  .experience {
+    padding: 15px;
+  }
+
   .work img {
     height: initial;
   }
