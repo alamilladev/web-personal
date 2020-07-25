@@ -154,6 +154,10 @@ hr {
   padding: 0 10px;
 }
 
+.header a:hover {
+  font-weight: bold;
+}
+
 .logo-wrapper {
   height: inherit;
   display: flex;

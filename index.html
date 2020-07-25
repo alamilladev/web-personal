@@ -37,6 +37,9 @@
             <li>
               <a class="link link-contacto" href="#contacto">Contáctame</a>
             </li>
+            <li>
+              <a class="link link-blog" href="blog/blog.html" target="_blank">Blog</a>
+            </li>
           </ol>
         </nav>
       </div>
@@ -50,7 +53,7 @@
           <strong>Desarrollador web </strong> <br/> 
           apasionado por la <strong>robótica</strong> <br>
         </h1>
-        <img class="hero-image" src="static/img/hero.png" alt="Imagen de Armando en la portada principal" width="500" height="300"/>
+        <img class="hero-image" src="static/img/hero.png" alt="Imagen de portada principal donde sale Armando" width="500" height="300"/>
       </div>
     </section>
     
@@ -63,13 +66,13 @@
         <article class="project">
           <div class="project-details">
             <h3 class="project-title">BlueSwitch</h3>
-            <h5 class="project-technology">Bootstrap / Django / Python</h5>
+            <h5 class="project-technology">HTML / CSS / Django / Python</h5>
             <p class="project-date">
               <small><strong>Fecha:</strong> 01/07/2018</small>
             </p>
             <p class="project-url">
               <small>
-                <strong><a href="http://blueswitch.aztech-4775.com/" target="_blank">Ver projecto</a></strong>
+                <strong><a href="https://github.com/alamilladev/BlueSwitch" target="_blank">Ver projecto</a></strong>
               </small>
             </p>
             <p class="project-description">
@@ -77,7 +80,7 @@
             </p>
           </div>
           <figure class="project-imageContainer">
-            <img class="project-image" src="static/img/blueswitch.png" alt="Imagen de Platzi Video React Native" width="450">
+            <img class="project-image" src="static/img/blueswitch.png" alt="Imagen de la página web de BlueSwitch" width="450">
           </figure>
         </article>
         
@@ -85,13 +88,13 @@
         <article class="project">
           <div class="project-details">
             <h3 class="project-title">Web AztecMUN 2020</h3>
-            <h5 class="project-technology">Bootstrap / Django / Python</h5>
+            <h5 class="project-technology">HTML / CSS / Django / Python</h5>
             <p class="project-date">
               <small><strong>Fecha:</strong> 01/07/2018</small>
             </p>
             <p class="project-url">
               <small>
-                <strong><a href="http://blueswitch.aztech-4775.com/" target="_blank">Ver projecto</a></strong>
+                <strong><a href="https://github.com/alamilladev/aztecmun" target="_blank">Ver projecto</a></strong>
               </small>
             </p>
             <p class="project-description">
@@ -99,7 +102,7 @@
             </p>
           </div>
           <figure class="project-imageContainer">
-            <img class="project-image img-web-aztecmun" src="static/img/web-aztecmun.png" alt="Imagen de Platzi Video React Native" width="450">
+            <img class="project-image img-web-aztecmun" src="static/img/web-aztecmun.png" alt="Imagen de la página web de AztecMUN 2020" width="450">
           </figure>
         </article>
       </div>
@@ -121,21 +124,21 @@
               <p class="work-description">
                 Desarrollador web y miembro del área de programación en Aztech Robotics. Equipo perteneciente a la comunidad global de robótica «FIRST»
               </p>
-              <a class="work-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver más</a>
+              <a class="work-url" href="" target="_blank">Ver más</a>
             </div>
           </article>
           
           <!-- Work in AztecMUN 2019 -->
           <article class="work">
             <figure class="work-imageContainer">
-              <img class="work-image" src="static/img/AztecMUN2019.png" alt="Imagen de Armando en Aztech Robotics" width="500"/>
+              <img class="work-image" src="static/img/AztecMUN2019.png" alt="Imagen de Armando en AztecMUN 2019" width="500"/>
             </figure>
             <div class="work-detail">
-              <h3 class="work-title">AztecMUN 2019</h3>
+              <h3 class="work-title">AztecMUN 2020 y 2019</h3>
               <p class="work-description">
-                Oficial de conferencia en el comité de la Organización Internacional de Policía Criminal (INTERPOL) en el modelo de naciones unidas AztecMUN 2019.
+                Secretario de informática en el modelo de naciones unidas AztecMUN 2020 y oficial de conferencia de la INTERPOL en la edición 2019.
               </p>
-              <a class="work-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver más</a>
+              <a class="work-url" href="https://www.facebook.com/AZTECMUN2020/photos/pcb.1141520212859844/1141520186193180/?type=3&theater" target="_blank">Ver más</a>
             </div>
           </article>
         </div>
@@ -170,7 +173,7 @@
     <footer class="footer">
       <div class="container">
         <p class="coded-by">
-          Coded with ❤️️ by <a href="https://www.instagram.com/alamilladev/" target="_blank">Armando Alamilla Cuellar</a>
+          Coded with ❤️️ by <a href="https://github.com/alamilladev" target="_blank">Armando Alamilla Cuellar</a>
         </p>
       </div>
     </footer>
@@ -179,9 +182,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
     <!-- Styles -->
-    <link rel="stylesheet" href="static/css/styles.min.css" />
+    <link rel="stylesheet" href="static/css/home.min.css" />
 
-    <!-- JavaScript -->
+    <!-- JavaScript for hamburger button in responsive design -->
     <script>
       /* Get HTML menu elements by querySelector */
       const menu = document.querySelector('.menu')
@@ -204,12 +207,13 @@
           document.querySelector('.link-proyectos').addEventListener('click', hideShow)
           document.querySelector('.link-experiencia').addEventListener('click', hideShow)
           document.querySelector('.link-contacto').addEventListener('click', hideShow)
+          document.querySelector('.link-blog').addEventListener('click', hideShow)
         } else {
           /* Removes event listeners to free memory */
           burgerButton.removeEventListener('click', hideShow)
           document.querySelector('.link-proyectos').removeEventListener('click', hideShow)
           document.querySelector('.link-experiencia').removeEventListener('click', hideShow)
-          document.querySelector('.link-contacto').removeEventListener('click', hideShow)
+          document.querySelector('.link-blog').removeEventListener('click', hideShow)
         }
       }
 
