@@ -1,0 +1,399 @@
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* |                                           | */
+/* |           Font Icons of icomoon           | */
+/* |                                           | */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../../fonts/icomoon.eot?nc5lil');
+  src:  url('../../../fonts/icomoon.eot?nc5lil#iefix') format('embedded-opentype'),
+    url('../../../fonts/icomoon.ttf?nc5lil') format('truetype'),
+    url('../../../fonts/icomoon.woff?nc5lil') format('woff'),
+    url('../../../fonts/icomoon.svg?nc5lil#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-date:before {
+  content: "\e900";
+}
+.icon-comment:before {
+  content: "\e901";
+}
+.icon-menu:before {
+  content: "\e902";
+}
+
+
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* |                                           | */
+/* |               DESKTOP FIRST               | */
+/* |                                           | */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+
+/* -------------- */
+/* General Styles */
+/* -------------- */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  color: #1D78F9;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+hr {
+  display: block;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+}
+
+
+/* ------ */
+/* Header */
+/* ------ */
+.header {
+  background-color: #1D252C;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 15px;
+
+  -webkit-box-shadow: 0px 10px 10px -6px #000000; 
+  box-shadow: 0px 10px 10px -6px #080808;
+  position: relative;
+  z-index: 1;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.header a:hover {
+  font-weight: bold;
+}
+
+.logo-wrapper {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+  letter-spacing: 2px;
+  font-family: 'Source Sans Pro', system-ui;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0;
+}
+
+
+/* ---------- */
+/* Post cover */
+/* ---------- */
+.post-cover {
+  height: 330px;
+  background-color: #1c3643;
+  background-image: url('../../../img/blog/cli.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.post-cover::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.75) 80%);
+}
+
+.post-info-container {
+  position: relative;
+  z-index: 2;
+  
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.post-title {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  font-size: 25px;
+}
+
+.post-meta {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.post-meta i {
+  margin-right: 3px;
+}
+
+.post-author,
+.post-date,
+.post-coments {
+  margin-right: 20px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+}
+
+.author-img-wrapper img {
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.author-name {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
+/* ------------ */
+/* Post content */
+/* ------------ */
+.post-text, .post-info {
+  margin: 0 55px;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-content p {
+  font-size: 20px;
+  line-height: 1.6em;
+  /* text-align: justify; */
+}
+
+blockquote {
+  font-style: italic;
+  padding: 0 1em;
+  color: #4e5257;
+  border-left: .25em solid #dfe2e5;
+  margin: 0;
+}
+
+
+/* ------- */
+/* Contact */
+/* ------- */
+.contact {
+  padding: 20px;
+  background-color: #1b2127;
+  color: white;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact .container {
+  border-bottom: 2px solid white;
+}
+
+.contact h3 {
+  color: white;
+  font-family: 'Source Sans Pro', system-ui;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.social-wrapper, .form-contact {
+  width: 50%;
+  text-align: center;
+}
+
+.social-networks-title {
+  margin-top: 0;
+}
+
+.input-fields-wraper {
+  display: flex;
+}
+
+#email, #name {
+  width: 50%;
+}
+
+#email, #name, #message {
+  display: block;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-family: 'Source Sans Pro', system-ui;
+  font-size: 15px;
+  /* background-image: url('../../img/home/envelope.svg');
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px; */
+}
+
+#email {
+  margin-left: 15px;
+}
+
+#message {
+  height: 65px;
+  resize: none;
+  width: calc(100% - 30px);
+}
+
+#email, #name, #message:focus {
+  outline: none;
+
+}
+
+.form-contact button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  background: transparent;
+  color: white;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 15px 0;
+  width: 200px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.social-link {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  background-size: 70px 70px;
+}
+
+.social-link.twitter {
+  background-image: url('../../../img/twitter.svg');
+}
+
+.social-link.facebook {
+  background-image: url('../../../img/facebook.svg');
+}
+
+.social-link.github {
+  background-image: url('../../../img/github.svg');
+}
+
+.social-link.instagram {
+  background-image: url('../../../img/instagram.svg');
+}
+
+
+/* ------ */
+/* Footer */
+/* ------ */
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coded-by {
+  margin: 40px 0;
+}
+
+.footer a {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
