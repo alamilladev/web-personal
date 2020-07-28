@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?nc5lil');
-  src:  url('../fonts/icomoon.eot?nc5lil#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?nc5lil') format('truetype'),
-    url('../fonts/icomoon.woff?nc5lil') format('woff'),
-    url('../fonts/icomoon.svg?nc5lil#icomoon') format('svg');
+  src:  url('../../fonts/icomoon.eot?nc5lil');
+  src:  url('../../fonts/icomoon.eot?nc5lil#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?nc5lil') format('truetype'),
+    url('../../fonts/icomoon.woff?nc5lil') format('woff'),
+    url('../../fonts/icomoon.svg?nc5lil#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -421,19 +421,19 @@ h1 strong {
 }
 
 .social-link.twitter {
-  background-image: url('../img/twitter.svg');
+  background-image: url('../../img/twitter.svg');
 }
 
 .social-link.facebook {
-  background-image: url('../img/facebook.svg');
+  background-image: url('../../img/facebook.svg');
 }
 
 .social-link.github {
-  background-image: url('../img/github.svg');
+  background-image: url('../../img/github.svg');
 }
 
 .social-link.instagram {
-  background-image: url('../img/instagram.svg');
+  background-image: url('../../img/instagram.svg');
 }
 
 

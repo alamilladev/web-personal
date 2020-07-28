@@ -62,18 +62,12 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: normal;
-}
 
 h2 {
-  color: #1D78F9;
-  text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 23px;
   font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 40px;
+  border-bottom: 1px solid #d3d3d3;
+  margin-top: 35px;
 }
 
 hr {
@@ -243,6 +237,11 @@ figure {
 /* ------------ */
 /* Post content */
 /* ------------ */
+.command {
+  font-style: italic;
+  background-color: #f2f2f2;
+}
+
 .post-text, .post-info {
   margin: 0 55px;
 }
@@ -251,10 +250,12 @@ figure {
   padding: 20px;
 }
 
-.post-content p {
-  font-size: 20px;
+.post-content p, ul {
+  font-size: 20px
+}
+
+.post-content p, ul, h2 {
   line-height: 1.6em;
-  /* text-align: justify; */
 }
 
 blockquote {
