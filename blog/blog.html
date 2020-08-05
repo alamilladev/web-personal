@@ -2,6 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
+    <!-- Meta Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Title -->
     <title>Blog - Armando Alamilla Cuellar</title>
     <!-- Favicon -->
@@ -12,6 +14,9 @@
     <link rel="stylesheet" href="../static/css/blog/blog.css">
   </head>
   <body>
+    <!-- Burger button for responsive design -->
+    <i class="icon-menu burger-button" id="burger-button"></i>
+    
     <!-- Header -->
     <header class="header">
       <div class="container">
@@ -44,117 +49,33 @@
     <section class="posts-list">
       <div class="container">
         <h2>Blog personal</h2>
+
         <!-- Post 1 -->
-        <a class="post-link" href="posts/que-es-la-terminal.html" target="_blank">
-          <article class="post">
-            <div class="post-body">
-              <h3 class="post-title">¿Qué es la terminal de comandos?</h3>
-              <p class="post-extract">
-                Las personas y las computadoras no hablan el mismo lenguaje. Para que exista una comunicación entre el usuario y la computadora se necesita de un intermediario que pueda...
-              </p>
-              <div class="post-meta">
-                <div class="post-author">
-                  <figure class="author-img-wrapper">
-                    <img src="../static/img/blog/profile.jpg" alt="Foto de Armando Alamilla" height="30" width="30">
-                  </figure>
-                  <a class="author-name" href="../index.html" target="_blank">Armando Alamilla</a>
-                </div>
-                <time class="post-date">
-                  <i class="icon-date"></i>
-                  <span>Mayo 31, 2020</span>
-                </time>
-                <div class="post-coments">
-                  <i class="icon-comment"></i>
-                  <span>4 comentarios</span>
-                </div>
+        <article class="post">
+          <a class="post-link" href="posts/que-es-una-terminal.html" target="_blank"></a>
+          <div class="post-body">
+            <h3 class="post-title">¿Qué es una terminal de comandos?</h3>
+            <p class="post-extract">
+              Las personas y las computadoras no hablan el mismo lenguaje. Para que exista una comunicación entre el usuario y la computadora se necesita de un intermediario que pueda...
+            </p>
+            <div class="post-meta">
+              <div class="post-author">
+                <figure class="author-img-wrapper">
+                  <img src="../static/img/blog/profile.jpg" alt="Foto de Armando Alamilla" height="25" width="25">
+                </figure>
+                <span class="author-name">Armando Alamilla</span>
+              </div>
+              <time class="post-date">
+                <i class="icon-date"></i>
+                <span>Mayo 31, 2020</span>
+              </time>
+              <div class="post-coments">
+                <i class="icon-comment"></i>
+                <span>4 comentarios</span>
               </div>
             </div>
-          </article>
-        </a>
-
-        <!-- Post 2 -->
-        <a class="post-link" href="posts/que-es-la-terminal.html" target="_blank">
-          <article class="post">
-            <div class="post-body">
-              <h3 class="post-title">¿Qué es la terminal de comandos?</h3>
-              <p class="post-extract">
-                Las personas y las computadoras no hablan el mismo lenguaje. Para que exista una comunicación entre el usuario y la computadora se necesita de un intermediario que pueda...
-              </p>
-              <div class="post-meta">
-                <div class="post-author">
-                  <figure class="author-img-wrapper">
-                    <img src="../static/img/blog/profile.jpg" alt="Foto de Armando Alamilla" height="30" width="30">
-                  </figure>
-                  <a class="author-name" href="../index.html" target="_blank">Armando Alamilla</a>
-                </div>
-                <time class="post-date">
-                  <i class="icon-date"></i>
-                  <span>Mayo 31, 2020</span>
-                </time>
-                <div class="post-coments">
-                  <i class="icon-comment"></i>
-                  <span>4 comentarios</span>
-                </div>
-              </div>
-            </div>
-          </article>
-        </a>
-
-        <!-- Post 3 -->
-        <a class="post-link" href="posts/que-es-la-terminal.html" target="_blank">
-          <article class="post">
-            <div class="post-body">
-              <h3 class="post-title">¿Qué es la terminal de comandos?</h3>
-              <p class="post-extract">
-                Las personas y las computadoras no hablan el mismo lenguaje. Para que exista una comunicación entre el usuario y la computadora se necesita de un intermediario que pueda...
-              </p>
-              <div class="post-meta">
-                <div class="post-author">
-                  <figure class="author-img-wrapper">
-                    <img src="../static/img/blog/profile.jpg" alt="Foto de Armando Alamilla" height="30" width="30">
-                  </figure>
-                  <a class="author-name" href="../index.html" target="_blank">Armando Alamilla</a>
-                </div>
-                <time class="post-date">
-                  <i class="icon-date"></i>
-                  <span>Mayo 31, 2020</span>
-                </time>
-                <div class="post-coments">
-                  <i class="icon-comment"></i>
-                  <span>4 comentarios</span>
-                </div>
-              </div>
-            </div>
-          </article>
-        </a>
-
-        <!-- Post 4 -->
-        <a class="post-link" href="posts/que-es-la-terminal.html" target="_blank">
-          <article class="post">
-            <div class="post-body">
-              <h3 class="post-title">¿Qué es la terminal de comandos?</h3>
-              <p class="post-extract">
-                Las personas y las computadoras no hablan el mismo lenguaje. Para que exista una comunicación entre el usuario y la computadora se necesita de un intermediario que pueda...
-              </p>
-              <div class="post-meta">
-                <div class="post-author">
-                  <figure class="author-img-wrapper">
-                    <img src="../static/img/blog/profile.jpg" alt="Foto de Armando Alamilla" height="30" width="30">
-                  </figure>
-                  <a class="author-name" href="../index.html" target="_blank">Armando Alamilla</a>
-                </div>
-                <time class="post-date">
-                  <i class="icon-date"></i>
-                  <span>Mayo 31, 2020</span>
-                </time>
-                <div class="post-coments">
-                  <i class="icon-comment"></i>
-                  <span>4 comentarios</span>
-                </div>
-              </div>
-            </div>
-          </article>
-        </a>
+          </div>
+        </article>     
       </div>
     </section>
 
@@ -190,5 +111,8 @@
         </p>
       </div>
     </footer>
+
+    <!-- JavaScript for hamburger button in responsive design -->
+    <script src="../static/js/index.js"></script>
   </body>
 </html>
