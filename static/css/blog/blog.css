@@ -394,10 +394,6 @@ figure {
 /* Breakpoint: tablets (768px - 1024px) */
 /* ------------------------------------ */
 
-@media screen and (max-width: 1023px) {
-  
-}
-
 @media screen and (max-width: 950px) {
   .post-extract {
     font-size: 14px;

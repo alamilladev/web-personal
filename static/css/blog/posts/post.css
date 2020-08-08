@@ -181,7 +181,7 @@ figure {
 .post-cover {
   height: 330px;
   background-color: #1c3643;
-  background-image: url('../../../img/blog/cli.jpg');
+  background-image: url('../../../img/blog/cli.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -441,10 +441,6 @@ blockquote {
 /* ------------------------------------ */
 /* Breakpoint: tablets (768px - 1024px) */
 /* ------------------------------------ */
-
-@media screen and (max-width: 1023px) {
-
-}
 
 @media screen and (max-width: 950px) {
   /* ----------------------- */

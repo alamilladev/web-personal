@@ -488,7 +488,7 @@ h1 strong {
     height: auto;
     position: relative;
     overflow: hidden;
-    padding: 8em 2em;
+    padding: 12em 2em 4em 2em;
   }
   
   .hero-image {
@@ -700,7 +700,7 @@ h1 strong {
     height: auto;
     position: relative;
     overflow: hidden;
-    padding: 5em 2em;
+    padding: 8em 2em 2em 2em;
   }
 
   /* -------------------- */
@@ -746,7 +746,7 @@ h1 strong {
   /* Hero responsive */
   /* --------------- */
   .hero {
-    padding: 4em 2em;
+    padding: 5.5em 2em 1em 2em;
   }
 
   h1 {
