@@ -1,6 +1,7 @@
 /* Get HTML menu elements by querySelector */
 const menu = document.querySelector('.menu')
 const heroTitle = document.querySelector('h1')
+const postCover = document.querySelector('.post-cover')
 const burgerButton = document.querySelector('#burger-button')    
 
 /* To improve performance of website I added a screen media query.
@@ -37,9 +38,11 @@ function hideShow() {
     /* Removes classes in order to hide menu and show heroTitle */
     menu.classList.remove('is-active')
     heroTitle.classList.remove('menu-is-active')
+    postCover.classList.remove('menu-is-active')
   } else {
     /* Adds classes in order to show menu and hide heroTitle */
     menu.classList.add('is-active')
-    heroTitle.classList.add('menu-is-active')    
+    heroTitle.classList.add('menu-is-active')   
+    postCover.classList.add('menu-is-active') 
   }
 }
