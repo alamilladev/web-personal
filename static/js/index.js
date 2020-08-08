@@ -37,8 +37,14 @@ function hideShow() {
   if(menu.classList.contains('is-active')) {
     /* Removes classes in order to hide menu and show heroTitle */
     menu.classList.remove('is-active')
-    heroTitle.classList.remove('menu-is-active')
-    postCover.classList.remove('menu-is-active')
+    
+    setTimeout(() => {
+      heroTitle.classList.remove('menu-is-active')
+    }, 85)
+
+    setTimeout(() => {
+      postCover.classList.remove('menu-is-active')
+    }, 200)
   } else {
     /* Adds classes in order to show menu and hide heroTitle */
     menu.classList.add('is-active')
