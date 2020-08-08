@@ -569,6 +569,13 @@ figure {
   .coded-by {
     font-size: 14px;
   }
+
+  /* --------------------- */
+  /* Blog posts responsive */
+  /* --------------------- */
+  .last-name {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 320px) {

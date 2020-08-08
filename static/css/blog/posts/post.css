@@ -75,13 +75,32 @@ hr {
 }
 
 .container {
-  width: 1000px;
+  max-width: 1000px;
+  flex: 1;
   margin: 0 auto;
-
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
+  flex-wrap: inherit;
+}
+
+/* ---------------- */
+/* Hamburger button */
+/* ---------------- */
+.burger-button {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(29, 37, 44, .8);
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 15px;
+  color: white;
 }
 
 
@@ -187,7 +206,8 @@ figure {
   position: relative;
   z-index: 2;
   
-  width: 1000px;
+  max-width: 1000px;
+  flex: 1;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -196,13 +216,14 @@ figure {
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-  margin: 0 0 15px 0;
+  margin: 0 0 5px 0;
   font-size: 25px;
 }
 
 .post-meta {
   color: white;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -214,6 +235,7 @@ figure {
 .post-date,
 .post-coments {
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 .post-author {
@@ -224,12 +246,12 @@ figure {
 .author-img-wrapper img {
   border-radius: 50px;
   vertical-align: middle;
+  margin-right: 7px;
 }
 
 .author-name {
   text-decoration: none;
   color: white;
-  margin-left: 10px;
   font-weight: bold;
 }
 
@@ -397,4 +419,241 @@ blockquote {
   color: white;
   font-weight: bold;
   font-style: italic;
+}
+
+
+
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+/* |                                             | */
+/* |              RESPONSIVE DESIGN              | */
+/* |                                             | */
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+
+
+/* ------------------------------------ */
+/* Breakpoint: tablets (768px - 1024px) */
+/* ------------------------------------ */
+
+@media screen and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 950px) {
+  /* ----------------------- */
+  /* Post content responsive */
+  /* ----------------------- */
+  .post-text {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  /* ------------------ */
+  /* Contact responsive */
+  /* ------------------ */
+  .social-link {
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+  }
+
+
+  /* ----------------------- */
+  /* Post content responsive */
+  /* ----------------------- */
+  .post-text {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* ---------------- */
+  /* Hamburger button */
+  /* ---------------- */
+  .burger-button {
+    display: block;
+  }
+
+
+  /* ----------------- */
+  /* Header responsive */
+  /* ----------------- */
+  .header {
+    display: block;
+    height: auto;
+  }
+
+  .header ol {
+    display: block;
+  }
+
+  .header ol li {
+    height: 50px;
+  }
+
+  .header li {
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-bottom: .9em;
+    padding: 5px 50px;
+  }
+
+  .header a {
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .header .logo-wrapper {
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .menu {
+    background: rgba(29, 37, 44, .93);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+
+  .menu.is-active {
+    left: 0;
+  }
+
+
+  /* ----------------------- */
+  /* Post content responsive */
+  /* ----------------------- */
+  .post-text {
+    margin: 0 20px;
+  }
+
+  .post-info {
+    margin: 0 40px;
+  }
+
+
+  /* ------------------ */
+  /* Contact responsive */
+  /* ------------------ */
+  .contact {
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .social-link {
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+  }
+
+  .social-wrapper, .form-contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-wrapper {
+    padding: 3em 0;
+  }
+}
+
+
+/* ---------------------------------- */
+/* Breakpoint: mobile (480px - 320px) */
+/* ---------------------------------- */
+
+@media screen and (max-width: 480px) {
+  /* ------------------ */
+  /* Contact responsive */
+  /* ------------------ */
+  .social-link {
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+  }
+
+
+  /* ----------------------- */
+  /* Post content responsive */
+  /* ----------------------- */
+  .post-text {
+    margin: 0;
+  }
+
+  .post-meta {
+    font-size: 14px;
+  }
+
+  .post-info {
+    margin: 0 20px;
+  }
+
+}
+
+@media screen and (max-width: 451px) {
+  /* ----------------------- */
+  /* Post content responsive */
+  /* ----------------------- */
+  .post-coments {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  /* ------------------ */
+  /* Contact responsive */
+  /* ------------------ */
+  .input-fields-wraper {
+    display: block;
+  }
+
+  #email, #name {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  #message {
+    width: 90%;
+  }
+  
+  .social-link {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+  }
+
+  .coded-by {
+    font-size: 14px;
+  }
+
+
+  /* ----------------------- */
+  /* Post content responsive */
+  /* ----------------------- */
+  .last-name {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* ------------------ */
+  /* Contact responsive */
+  /* ------------------ */
+  .social-link {
+    width: 45px;
+    height: 45px;
+    background-size: 45px 45px;
+    margin: 5px;
+  }
 }
