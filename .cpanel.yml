@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/armaroyt/public_html/
+    - /bin/cp -R blog $DEPLOYPATH
+    - /bin/cp -R static $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
