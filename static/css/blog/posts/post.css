@@ -8,8 +8,9 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../../../fonts/icomoon.eot?nc5lil');
-  src:  url('../../../fonts/icomoon.eot?nc5lil#iefix') format('embedded-opentype'),
+  src: url('../../../fonts/icomoon.eot?nc5lil');
+  src: url('../../../fonts/icomoon.eot?nc5lil#iefix')
+      format('embedded-opentype'),
     url('../../../fonts/icomoon.ttf?nc5lil') format('truetype'),
     url('../../../fonts/icomoon.woff?nc5lil') format('woff'),
     url('../../../fonts/icomoon.svg?nc5lil#icomoon') format('svg');
@@ -18,7 +19,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -34,16 +36,14 @@
 }
 
 .icon-date:before {
-  content: "\e900";
+  content: '\e900';
 }
 .icon-comment:before {
-  content: "\e901";
+  content: '\e901';
 }
 .icon-menu:before {
-  content: "\e902";
+  content: '\e902';
 }
-
-
 
 /* --------------------------------------------- */
 /* --------------------------------------------- */
@@ -53,7 +53,6 @@
 /* --------------------------------------------- */
 /* --------------------------------------------- */
 
-
 /* -------------- */
 /* General Styles */
 /* -------------- */
@@ -61,7 +60,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
 }
-
 
 h2 {
   font-size: 23px;
@@ -93,7 +91,7 @@ hr {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: rgba(29, 37, 44, .8);
+  background-color: rgba(29, 37, 44, 0.8);
   line-height: 40px;
   text-align: center;
   position: fixed;
@@ -103,12 +101,11 @@ hr {
   color: white;
 }
 
-
 /* ------ */
 /* Header */
 /* ------ */
 .header {
-  background-color: #1D252C;
+  background-color: #1d252c;
   color: white;
   height: 70px;
   display: flex;
@@ -117,7 +114,7 @@ hr {
   flex-wrap: wrap;
   padding: 0 15px;
 
-  -webkit-box-shadow: 0px 10px 10px -6px #000000; 
+  -webkit-box-shadow: 0px 10px 10px -6px #000000;
   box-shadow: 0px 10px 10px -6px #080808;
   position: relative;
   z-index: 1;
@@ -174,7 +171,6 @@ figure {
   margin: 0;
 }
 
-
 /* ---------- */
 /* Post cover */
 /* ---------- */
@@ -197,11 +193,14 @@ figure {
   right: 0;
   top: 0;
   bottom: 0;
-  content: "";
+  content: '';
   z-index: 1;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.75) 80%);
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.75) 80%
+  );
 }
-
 
 .post-cover.menu-is-active {
   z-index: 0;
@@ -210,7 +209,7 @@ figure {
 .post-info-container {
   position: relative;
   z-index: 2;
-  
+
   max-width: 1000px;
   flex: 1;
   margin: 0 auto;
@@ -260,7 +259,6 @@ figure {
   font-weight: bold;
 }
 
-
 /* ------------ */
 /* Post content */
 /* ------------ */
@@ -269,7 +267,8 @@ figure {
   background-color: #f2f2f2;
 }
 
-.post-text, .post-info {
+.post-text,
+.post-info {
   margin: 0 55px;
 }
 
@@ -277,11 +276,16 @@ figure {
   padding: 20px;
 }
 
-.post-content p, ul {
-  font-size: 20px
+.post-content p,
+ul,
+.post-content ol {
+  font-size: 20px;
 }
 
-.post-content p, ul, h2 {
+.post-content p,
+ul,
+h2, 
+.post-content ol {
   line-height: 1.6em;
 }
 
@@ -289,10 +293,9 @@ blockquote {
   font-style: italic;
   padding: 0 1em;
   color: #4e5257;
-  border-left: .25em solid #dfe2e5;
+  border-left: 0.25em solid #dfe2e5;
   margin: 0;
 }
-
 
 /* ------- */
 /* Contact */
@@ -319,7 +322,8 @@ blockquote {
   font-size: 24px;
 }
 
-.social-wrapper, .form-contact {
+.social-wrapper,
+.form-contact {
   width: 50%;
   text-align: center;
 }
@@ -332,11 +336,14 @@ blockquote {
   display: flex;
 }
 
-#email, #name {
+#email,
+#name {
   width: 50%;
 }
 
-#email, #name, #message {
+#email,
+#name,
+#message {
   display: block;
   border: none;
   border-radius: 3px;
@@ -361,9 +368,10 @@ blockquote {
   width: calc(100% - 30px);
 }
 
-#email, #name, #message:focus {
+#email,
+#name,
+#message:focus {
   outline: none;
-
 }
 
 .form-contact button {
@@ -404,7 +412,6 @@ blockquote {
   background-image: url('../../../img/instagram.svg');
 }
 
-
 /* ------ */
 /* Footer */
 /* ------ */
@@ -426,9 +433,6 @@ blockquote {
   font-style: italic;
 }
 
-
-
-
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
 /* |                                             | */
@@ -436,7 +440,6 @@ blockquote {
 /* |                                             | */
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
-
 
 /* ------------------------------------ */
 /* Breakpoint: tablets (768px - 1024px) */
@@ -461,7 +464,6 @@ blockquote {
     background-size: 60px 60px;
   }
 
-
   /* ----------------------- */
   /* Post content responsive */
   /* ----------------------- */
@@ -477,7 +479,6 @@ blockquote {
   .burger-button {
     display: block;
   }
-
 
   /* ----------------- */
   /* Header responsive */
@@ -498,7 +499,7 @@ blockquote {
   .header li {
     border: 2px solid white;
     border-radius: 5px;
-    margin-bottom: .9em;
+    margin-bottom: 0.9em;
     padding: 5px 50px;
   }
 
@@ -514,7 +515,7 @@ blockquote {
   }
 
   .menu {
-    background: rgba(29, 37, 44, .93);
+    background: rgba(29, 37, 44, 0.93);
     position: fixed;
     z-index: 3;
     top: 0;
@@ -524,13 +525,12 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .menu.is-active {
     left: 0;
   }
-
 
   /* ----------------------- */
   /* Post content responsive */
@@ -542,7 +542,6 @@ blockquote {
   .post-info {
     margin: 0 40px;
   }
-
 
   /* ------------------ */
   /* Contact responsive */
@@ -559,7 +558,8 @@ blockquote {
     background-size: 70px 70px;
   }
 
-  .social-wrapper, .form-contact {
+  .social-wrapper,
+  .form-contact {
     width: 100%;
     text-align: center;
   }
@@ -568,7 +568,6 @@ blockquote {
     padding: 3em 0;
   }
 }
-
 
 /* ---------------------------------- */
 /* Breakpoint: mobile (480px - 320px) */
@@ -584,7 +583,6 @@ blockquote {
     background-size: 60px 60px;
   }
 
-
   /* ----------------------- */
   /* Post content responsive */
   /* ----------------------- */
@@ -599,7 +597,6 @@ blockquote {
   .post-info {
     margin: 0 20px;
   }
-
 }
 
 @media screen and (max-width: 451px) {
@@ -619,7 +616,8 @@ blockquote {
     display: block;
   }
 
-  #email, #name {
+  #email,
+  #name {
     margin-left: 0;
     width: 90%;
   }
@@ -627,7 +625,7 @@ blockquote {
   #message {
     width: 90%;
   }
-  
+
   .social-link {
     width: 50px;
     height: 50px;
@@ -637,7 +635,6 @@ blockquote {
   .coded-by {
     font-size: 14px;
   }
-
 
   /* ----------------------- */
   /* Post content responsive */
